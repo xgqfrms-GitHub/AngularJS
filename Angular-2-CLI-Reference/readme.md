@@ -11,7 +11,7 @@ $ ng new <project-name> [options]
     --dry-run 别名: 'd'  
     只输出创建的文件和操作执行，实际上不创建项目。
 
-    --verbose Alias: 'v' 
+    --verbose 别名: 'v' 
     输出更多信息。 
 
     --skip-npm 
@@ -202,5 +202,8 @@ Options:
 ## ng version
 ```sh
 $ ng version
+# 别名: 
+$ ng v
+$ ng -v
 ``` 
 输出 angular-cli, node和操作系统的版本。
