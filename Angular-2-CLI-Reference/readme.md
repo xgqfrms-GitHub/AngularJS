@@ -7,6 +7,7 @@ $ ng new <project-name> [options]
 创建一个新的Angular项目。默认情况下，项目在当前目录下创建。
 
 选项:  
+```sh
     --dry-run 别名: 'd'  
     只输出创建的文件和操作执行，实际上不创建项目。
 
@@ -21,7 +22,7 @@ $ ng new <project-name> [options]
 
     --directory 
     父目录创建新项目.
-
+``` 
 
 ## ng init
 ```sh
@@ -30,6 +31,7 @@ $ ng init <project-name> [options]
 在当前文件夹中创建一个新的Angular项目。
 
 选项:  
+```sh
     --dry-run 别名: 'd'  
     只输出创建的文件和操作执行，实际上不创建项目。
 
@@ -41,7 +43,7 @@ $ ng init <project-name> [options]
 
     --name 
     要创建的项目的名称。
-
+``` 
 
 ## ng completion
 ```sh
@@ -79,7 +81,8 @@ $ ng generate <type> [options]
 在项目中生成新代码。
 
 有效类型:  
-    component &lt;path/to/component-name> 
+```sh
+    component <path/to/component-name> 
     生成一个组件。
 
     directive <path/to/directive-name> 
@@ -93,10 +96,11 @@ $ ng generate <type> [options]
 
     service <path/to/service-name> 
     生成一个服务。
-
+``` 
 生成的组件有自己的目录，除非指定了-flat选项。
 
 选项:  
+```sh
     --flat 
     不要在自己的目录中创建代码。
 
@@ -111,7 +115,7 @@ $ ng generate <type> [options]
 
     --lazy 
     指定路由是延迟的。默认为true。
-
+``` 
 
 ## ng get
 ```sh
@@ -123,10 +127,11 @@ pathN参数是一个有效的JavaScript路径，如“users[1].userName”。
 此命令默认情况下仅在项目目录中工作。  
 
 选项:
+```sh
     --global 
     返回全局配置值，而不是本地配置值（如果都设置）。
     此选项还使命令在项目目录外工作。
-
+``` 
 
 ## ng set
 ```sh
@@ -138,9 +143,12 @@ pathN参数是一个有效的JavaScript路径，如“users[1].userName”。
 该值将被强制转换为正确的类型，或者如果类型无法强制，则会抛出错误。  
 
 选项:
+```sh
     --global 
     设置全局配置值，而不是本地配置值。
     这也使得ng set在项目之外工作。
+``` 
+
 
 ## ng github-pages:deploy
 ```sh
@@ -148,8 +156,9 @@ $ ng github-pages:deploy [options]
 ``` 
 构建生产应用程序，设置GitHub存储库，然后发布应用程序。
 
-选项:
-    --message=&lt;message&gt; 
+选项:  
+```sh
+    --message=<message> 
     提交消息以与构建一起包括。默认为“new gh-pages version”。
 
     --environment=<env> 
@@ -167,7 +176,7 @@ $ ng github-pages:deploy [options]
 
     --gh-username=<username> 
     要使用的Github用户名。必c。
-
+``` 
 
 ## ng lint
 ```sh
@@ -183,14 +192,15 @@ $ ng test [options]
 运行单元测试，使用karma。
 
 Options:
+```sh
     --watch 
     继续运行测试。默认为true。
     --browsers, --colors, --reporters, --port, --log-level
     些参数直接传递给karma。
-
+``` 
 
 ## ng version
 ```sh
 $ ng version
 ``` 
-输出angular-cli,node和操作系统的版本。
+输出 angular-cli, node和操作系统的版本。
